@@ -11,6 +11,7 @@ int main()
     // Pass lambda expression
     // Syntax [](arguments){expression;}
     // Compiler will generate a functor class
+    // Complex return types can be set as [](arguments) -> bool {expression;} (C++ 11)
     auto odd_it = find_if(cbegin(vec), cend(vec), [](int n)
                           { return (n % 2 == 1); });
 
