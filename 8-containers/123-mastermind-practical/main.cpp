@@ -32,7 +32,7 @@ int main()
         peg_array input = get_input();
 
         int exact = exact_matches(input, pegs);
-        int loose = loose_matches(input, pegs);
+        int loose = loose_matches(input, pegs) - exact;
         cout << exact << " exact match(es)" << endl;
         cout << loose << " loose match(es)" << endl;
 
